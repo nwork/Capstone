@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SD2799 Capstone</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css" media="all">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet' type='text/css' href='jquery-ui-1.11.4/jquery-ui.css'/>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="datepicker.js"></script>
+    <!--<script>-->
+        <!--$(function() {-->
+            <!--$("#visit_date").datepicker();-->
+        <!--});-->
+    <!--</script>-->
+</head>
+<body>
+<!--<section id="childinfo">-->
+<form name="update" action="update_child_info.php" method="post" >
+    <div class="left">
+        <label for="ch_fname">First Name:</label>
+        <input type="text" id="ch_fname" name="ch_fname" placeholder="First Name" required>
+        <label for="ch_mname">Middle Name:</label>
+        <input type="text" id="ch_mname" name="ch_mname" placeholder="Middle Name" required>
+        <label for="ch_lname">Last Name:</label>
+        <input type="text" id="ch_lname" name="ch_lname" placeholder="Last Name" required>
+        <label for="ch_age">Age:</label>
+        <input type="number" id="ch_age" name="ch_age" placeholder="Age" value="" required>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" title="Male" checked>Male
+        <input type="radio" name="gender" value="Female" title="Female">Female
+        <input type="radio" name="gender" value="Other" title="Other">Other
+        <label for="kalgy">Known Allergies:</label>
+        <input type="text" id="kalgy" name="kalgy" placeholder="Known Allergies" value="" required>
+        <label for="visit_date">Visit Dates:</label>
+        <input type="text" id="visit_date" required>
+        <br>
+        <input type="submit" name="submit" value="Update Info">
+    </div>
+</form>
+<!--</section>-->
+</body>
+</html>

@@ -1,24 +1,79 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>SD2799 Capstone</title>
-    <link rel="stylesheet" href="main.css" media="all">
-</head>
-<body>
-    <h2>SD2799 Capstone: Daycare</h2>
-    <div id="login-container">
-        <form>
-            <label for="uname">Username</label>
-            <input type="text" name="uname" id="uname">
-            <label for="pword">Password</label>
-            <input type="password" name="pword" id="pword">
-            <div id="lower">
-                <input type="checkbox" id="checkbox"><label for="checkbox">Keep me logged in.</label>
-                <input type="submit" value="Login">
-            </div>
-        </form>
-    </div>
+	<head>
+		<meta charset="UTF-8">
+		<title>SD2799 Capstone</title>
+		<link rel="stylesheet" href="main.css" media="all">
+		<!--<link rel="stylesheet" href="other.css" media="screen">-->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet'>
 
-</body>
+	</head>
+	<body>
+		<header>
+			Welcome to Child Daycare
+		</header>
+		<div class="search_container">
+			<form name="search" action="class-search.php" method="get">
+				<p>Search the database:</p>
+				<input type="search" class="search_box" id="s" name="s" placeholder="Search...">
+					<input type="submit" name="submit" value="Search" class="search">
+			</form>
+		</div>
+		<div class="menu">
+			<!-- Menu Icon -->
+			<div class="icon-close">
+				<img src="close.png">
+			</div>
+
+			<!-- Menu -->
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+
+		<!-- Main Body -->
+		<div class="jumbotron">
+
+			<div class="icon-menu">
+				<i class="fa fa-bars"></i>
+				Menu
+			</div>
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="app.js"></script>
+		</div>
+		<div class="results">
+			<form name="update" action="update_child_info.php?update" method="post" >
+				<div class="left">
+					<label for="ch_fname">First Name:</label>
+					<input type="text" id="ch_fname" name="ch_fname" placeholder="First Name" required>
+					<label for="ch_mname">Middle Name:</label>
+					<input type="text" id="ch_mname" name="ch_mname" placeholder="Middle Name" required>
+					<label for="ch_lname">Last Name:</label>
+					<input type="text" id="ch_lname" name="ch_lname" placeholder="Last Name" required>
+					<label for="ch_age">Age:</label>
+					<input type="number" id="ch_age" name="ch_age" placeholder="Age" value="" required>
+					<label>Gender:</label>
+					<input type="radio" name="gender" value="Male" title="Male" checked>Male
+					<input type="radio" name="gender" value="Female" title="Female">Female
+					<input type="radio" name="gender" value="Other" title="Other">Other
+					<label for="kalgy">Known Allergies:</label>
+					<input type="text" id="kalgy" name="kalgy" placeholder="Known Allergies" value="" required>
+					<label for="visit_date">Visit Dates:</label>
+					<input type="text" id="visit_date" required>
+					<br>
+					<input type="submit" name="submit" value="Update Info">
+				</div>
+			</form>
+		</div>
+		<footer>
+
+		</footer>
+	</body>
 </html>

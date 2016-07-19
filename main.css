@@ -1,154 +1,171 @@
-a{
-    display: block;
-    text-decoration: none;
-    padding: 5px;
-    width: 200px;
-}
-a:link {
-    color: rgb(255,102,102);
-    border-bottom: 1px dotted rgba(255,51,5,51);
-}
-a:visited {
-    color: rgb(255,153,153);
-    border-bottom: 1px dotted rgb(255,235,235);
-}
-a:hover {
-    color: rgb(255,0,0);
-    border-bottom: 1px solid rgb(255,0,0);
-}
-a:active {
-    color: rgb(0,0,255);
-    border-bottom: 1px dotted rgb(102,102,102);
-}
-html,body{
-    /*background-color: dimgrey;*/
-    width: 100%;
-    height: 100%;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    color: #444;
-    -webkit-font-smoothing: antialiased;
-    background: #f0f0f0;
-}
-form {
-    margin : 20px auto 0;
+input:required
+{
+	border: 1px solid red;
 }
 
-h1{
-    font-weight: bold;
+h2
+{
+	text-align: center;
 }
-input {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 12px;
-    outline: none;
+
+html
+{
+	background-color: #646464;
+	font-size: 10pt;
 }
-input[type=text], input[type=password] {
-    color        : #777;
-    padding-left : 10px;
-    margin       : 12px 10px 10px 18px;
-    width        : 290px;
-    height       : 35px;
-    border: 1px solid #c7d0d2;
-    border-radius: 2px;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
+
+header
+{
+	color: black;
+	text-align: center;
+	padding: 5px;
 }
-input[type=text]:hover, input[type=password]:hover {
-    border: 1px solid #b6bfc0;
-    box-shadow: inset 0 1.5px 3px rgba(190,190,190,.7), 0 0 0 5px #f5f7f8;
+
+/*input[type=text] input[type=number] {*/
+/*width: 200px;*/
+/*}*/
+#ch_fname #ch_mname #ch_lname #kalgy #visit_date #ch_gender
+{
+	width: 200px;
 }
-input[type=text]:focus, input[type=password]:focus {
-    border: 1px solid #a8c9e4;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+
+#ch_age
+{
+	width: 180px;
 }
-input:hover {
-    border-color: rgb(204,153,153);
-    color: rgb(102,102,102);
+
+label
+{
+	display: block;
+	color: #999;
 }
-input:focus {
-    border-color: rgb(255,0,0);
-    background-color: rgb(255,255,255);
-    color: rgb(0,0,0);
-    outline: none;
+
+.result_fields
+{
+	position: relative;
+	float: left;
 }
-input:active {
-    color: rgb(255,0,0);
-    border-color: rgb(255,0,0);
-    background-color: rgb(0,0,0);
+
+.search_container
+{
+	/*line-height: 30px;*/
+	float: right;
+	height: auto;
+	width: auto;
+	display: block;
+	padding: 5px;
 }
-label {
-    color: #555;
-    display: inline-block;
-    margin-left: 18px;
-    padding-top: 10px;
-    font-size: 14px;
+
+.search_box
+{
+	position: relative;
+	box-sizing: border-box;
+	border: 2px solid #CCC;
+	border-radius: 4px;
+	font-size: 12px;
+	width: auto;
+	background: grey url('search_box_icon.png') no-repeat 10px 10px;
+	padding: 12px 20px 12px 40px;
 }
-p a {
-    font-size: 11px;
-    color: #aaa;
-    float: right;
-    margin-top: -13px;
-    margin-right: 20px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
+
+.results_container
+{
+	float: left;
+	width: 500px;
+	padding: 10px;
+	background-color: #686868;
 }
-p a:hover {
-    color: #555;
+
+footer
+{
+	background-color: black;
+	color: black;
+	clear: both;
+	text-align: center;
+	padding: 5px;
 }
-#login-container {
-    position: fixed;
-    width: 340px;
-    height: 280px;
-    top: 50%;
-    left: 50%;
-    margin-top: -140px;
-    margin-left: -170px;
-      background: #fff;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
-}
-#lower {
-    background: #ecf2f5;
-    width: 100%;
-    height: 69px;
-    margin-top: 20px;
-}
-input[type=checkbox] {
-    margin-left: 20px;
-    margin-top: 30px;
-}
-.check {
-    margin-left: 3px;
-}
+
 input[type=submit]
 {
-    float            : right;
-    margin-right     : 20px;
-    margin-top       : 20px;
-    width            : 80px;
-    height           : 30px;
-    font-size        : 14px;
-    font-weight      : bold;
-    color            : #FFFFFF;
-    background-color : #ACD6EF; /*IE fallback*/
-    background-image : -webkit-gradient(linear, left top, left bottom, from(#ACD6EF), to(#6EC2E8));
-    background-image : -moz-linear-gradient(top left 90deg, #ACD6EF 0%, #6EC2E8 100%);
-    background-image : linear-gradient(top left 90deg, #ACD6EF 0%, #6EC2E8 100%);
-    border-radius    : 30px;
-    border           : 1px solid #66ADD6;
-    box-shadow       : 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-    cursor           : pointer;
+	display: inline-block;
+	cursor: pointer;
+	background-color: #0858AF; /* Green */
+	border: none;
+	color: white;
+	padding: 4px 15px;
+	font: bold 1em/2em Arial, Helvetica;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;
+	border-radius: .4em;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	overflow: visible;
+	-moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
 }
-input[type=submit]:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+
+input[type=submit]:focus
+{
+	outline: 0;
+	background: #FAFAFA;
 }
-input[type=submit]:active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+
+button.button, input.button
+{
+	cursor: pointer;
+	overflow: visible; /* removes extra side spacing in IE */
+}
+
+input::-moz-focus-inner
+{
+	padding: .4em;
+}
+
+button::-moz-focus-inner
+{
+	border: 0;
+	padding: 0;
+}
+
+.search_button:hover
+{
+	background-color: #FFF;
+	color: #0858AF;
+	border: 1px;
+	box-shadow: 0 0 .1em rgb(16, 255, 0);
+}
+
+.update_button
+{
+	display: inline-block;
+	cursor: pointer;
+	background-color: #0858AF; /* Green */
+	border: none;
+	color: white;
+	padding: 4px 15px;
+	font: bold 1em/2em Arial, Helvetica;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;
+	border-radius: .4em;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	overflow: visible;
+	-moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+}
+
+.update_button:hover
+{
+	background-color: #FFF;
+	color: #0858AF;
+	border: 1px;
+	box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent Info</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css" media="all">
+</head>
+<body>
+<form name="update" action="parse_parents.php" method="post" >
+    <div class="left">
+        <label for="p_fname">First Name:</label>
+        <input type="text" id="p_fname" name="p_fname" placeholder="First Name" required>
+        <label for="p_mname">Middle Name:</label>
+        <input type="text" id="p_mname" name="p_mname" placeholder="Middle Name" required>
+        <label for="p_lname">Last Name:</label>
+        <input type="text" id="p_lname" name="p_lname" placeholder="Last Name" required>
+        <label for="p_home_number">Home Number:</label>
+        <input type="number" id="p_home_number" name="p_home_number" placeholder="Home Number" required>
+        <label for="p_cell_number">Cell Number:</label>
+        <input type="tel" id="p_cell_number" name="p_cell_number" placeholder="Cell Number" required>
+        <label for="p_home_address">Home Adress:</label>
+        <input type="text" id="p_home_address" name="p_home_address" placeholder="Home Address" required>
+        <br>
+        <input type="submit" name="submit" value="Update Info">
+    </div>
+</form>
+</body>
+</html>
